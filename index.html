@@ -17,12 +17,25 @@
     
   </head>
   <body>
+    <div><select id="selector"></select></div>
     <div id="divPlot"></div>
     <script>
       d3.select('html').style('height','100%').style('width','100%')
       d3.select('body').style('height','100%').style('width','95%').style('margin-left', 'auto').style('margin-right','auto')
-      d3.select('#divPlot').style('width', "80%").style('height', "82%")
+      d3.select('#divPlot').style('width', "90%").style('height', "78%")
       kinect3d( d3.select('#divPlot'));
+      
+      d3.csv("valuesforDD.csv", function(error, data) {
+    var select = d3.select("#selector")
+
+    select.selectAll("option")
+      .data(data)
+      .enter()
+        .append("option")
+        .attr("value", function (d) { return d.value; })
+        .text(function (d) { return d.label; });
+  });
+      
     </script>
 	<div id="buttons" style="text-align:center;"></div>  
 	<p>
