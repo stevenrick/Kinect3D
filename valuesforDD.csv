@@ -1,5 +1,7 @@
 value,label
-"data/RoboTestBack_2_bodyTracking.csv","Robot from Behind 1"
-"data/RoboTestBack_3_bodyTracking.csv","Robot from Behind 2"
-"data/RoboTest_24_bodyTracking.csv","Robot from Side"
-"data/pilot4_rightOfLegs_top_1_bodyTracking.csv","Surgery"
+filepath,Select File to Load
+data/RoboTestBack_2_bodyTracking.csv,Robot from Behind 1
+data/RoboTestBack_3_bodyTracking.csv,Robot from Behind 2
+data/RoboTest_24_bodyTracking.csv,Robot from Side
+data/pilot4_rightOfLegs_top_1_bodyTracking.csv,Surgery
+data/patient_30_body1-jointPositionData.csv,vish1
